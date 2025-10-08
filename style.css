@@ -1,0 +1,47 @@
+body{
+    background-color: bisque;
+}
+h2{
+    text-align: center;
+    color: blueviolet;
+ 
+}
+button#one{
+    margin: 10px;
+    color: black;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background-color:white;
+
+}
+button#two{
+    margin: 10px;
+    color:aliceblue;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: green;
+}
+h1#h1tag{
+    text-align: center;
+    color: blueviolet;
+    border-bottom: dotted 5px;
+    border-color: black;
+    padding-bottom: 20px;
+    background-color: aliceblue;
+}
+a{
+    color: blue;
+}
+
+
+/* h1{
+    padding: 10px;
+    border: dotted 5px;
+    border-bottom: solid 5px;
+} */
+/* h1#addedup{
+    color:blueviolet;
+
+} */
