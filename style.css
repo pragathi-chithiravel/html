@@ -1,5 +1,8 @@
 body{
-    background-color: bisque;
+    /* background-color: bisque; */
+    background-image: url();
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 h2{
     text-align: center;
@@ -32,7 +35,10 @@ h1#h1tag{
     background-color: aliceblue;
 }
 a{
-    color: blue;
+    /* color: blue; */
+    color: rgb(red, green, blue);
+    color: rgba(red, green, blue, alpha);
+    opacity: 0.3;
 }
 
 
@@ -45,3 +51,8 @@ a{
     color:blueviolet;
 
 } */
+
+img{
+    display: flex;
+    flex-direction: row;
+}
