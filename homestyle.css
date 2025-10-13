@@ -14,6 +14,7 @@ button#one{
     height: 30px;
     border-radius: 10px;
     background-color:white;
+    cursor:pointer;
 
 }
 button#two{
@@ -23,6 +24,7 @@ button#two{
     height: 30px;
     border-radius: 10px;
     background-color: green;
+    cursor: pointer;
 }
 h2#h2tag{
     text-align: center;
