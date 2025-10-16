@@ -40,3 +40,27 @@ h1{
     top: 100px;
     z-index: 8;
 }
+.sampling{
+    float:right;
+    width: 100px;
+    height: 100px;
+}
+
+.sampleoverflow{
+    width: 200px;
+    height: 100px;
+    background-color: pink;
+    overflow-y: scroll;
+    position:relative;
+}
+.box{
+    width:200px;
+    height: 200px;
+    background-color: aqua;
+    border: 10px;
+    display:inline-block;
+    margin-top: 50px;
+}
+h3:visited{
+    color:brown;
+}
