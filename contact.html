@@ -57,7 +57,7 @@
                 console.log(result);
             }
             addingnew()
-        </script> -->
+        
 
 
 
@@ -75,5 +75,58 @@
         </div>
 
         <a href="http://127.0.0.1:5500/html/Home.html" target="_blank">home page</a>
+         -->
+        <script>
+        
+            let a="30";
+            if(a==="10"){
+                console.log("This is if statment")
+            }
+            if(a=="20"){
+                console.log("This is elif statment")
+            }
+            if(a=="30"){
+                console.log("This is if 30 ")
+            }
+            else{
+                console.log("The conten are not matching")
+            }
+
+            let day="Saturday"
+            switch(day){
+                case "Monday":
+                    console.log("This is monaday !")
+                    break;
+                case "Tuesday":
+                    console.log("This is Tuesday  !")
+                    break;
+                case "Friday":
+                    console.log("This is Friday !")
+                    break;
+                default:
+                    console.log("This day not mached")
+            }
+
+            let text="  Hi, Pragathi👋"
+
+            console.log(text)
+            console.log(text.charAt(0))
+            console.log(text.startsWith("Hi"))
+            console.log(text.endsWith("👋"))
+            console.log(text.length)
+            console.log(text.slice(3,11))
+            console.log(text.concat("how are you?"))
+            console.log(text.includes("Pragathi"))
+            console.log(text.replace("Hi","What are you doing"))
+            console.log(text.trimLeft())
+            console.log(text.charCodeAt(3))
+            console.log(text.repeat(2))
+            console.log(text.split(","))
+            console.log(text.substring(1,5))
+            console.log(text.codePointAt(0))
+            console.log(String.fromCharCode(65))
+            console.log(String.fromCodePoint(128522))
+            console.log(text.valueOf())
+        </script>
     </body>
 </html>

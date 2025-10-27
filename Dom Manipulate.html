@@ -1,0 +1,36 @@
+<body>
+    <h1 id="sample">This is sample manipulation content</h1>
+    <button onclick="change()">Change Content</button>
+    <p class="para">This is paragraph</p>
+    <input id="input1" placeholder="Enter the second number" type="number">
+
+    <script>
+        function change(){
+        let content =document.getElementById("sample");
+        let text=content.textcontent;
+        console.log(content);
+        content.textContent="ccontent got replaced"
+        }
+
+        function addTheNumber(){
+            let htag=document.getElementById("Added");
+            htag.textContent=input1*input2
+        }
+
+        function keyupExample(){
+            let inputpara=document.getElementById("changeExample")
+            let h1val=document.getElementById("changecontent")
+            h1val.textContent=inputpara;
+        }
+
+        function addIntoDivTag(){
+            let sa=document.createElement("h1")
+            let sa1=document.createElement("h1")
+            let divcon=document="Hi h1 tag created";
+            sa.textContent="Hi h1 tag created";
+            sa1.textContent="Hi h1 tag created";
+            divcon.append(sa);
+            divcon.append(sa1);
+        }
+    </script>
+</body>
