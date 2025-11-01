@@ -2,19 +2,33 @@
     <h1 id="sample">This is sample manipulation content</h1>
     <button onclick="change()">Change Content</button>
     <p class="para">This is paragraph</p>
+    <h1 id="Added"></h1>
     <input id="input1" placeholder="Enter the second number" type="number">
+    <input id="input2" placeholder="Enter the second number" type="numbeer">
+    <button onclick="addTheNumber()">Add</button>
+
+    <h1 id="changecontent"></h1>
+    <input id="changeExample" placeholder="Type something" onkeyup="keyupExample()">
 
     <script>
         function change(){
         let content =document.getElementById("sample");
         let text=content.textcontent;
-        console.log(content);
-        content.textContent="ccontent got replaced"
+        console.log(textContent);
+        let paracontent=document.getElementsByClassName("para");
+        console.log(paracontent);
+        console.log(paracontent[0].textContent);
+        content.textContent="content got replaced";
         }
 
         function addTheNumber(){
+            let input1=document.getElementById("input1").value;
+            let input2=document.getElementById("input2").value;
+            let change=Numbe(input1);
+            console.log(change);
+            console.log(input1*input2);
             let htag=document.getElementById("Added");
-            htag.textContent=input1*input2
+            htag.textContent=input1*input2;
         }
 
         function keyupExample(){
@@ -32,5 +46,42 @@
             divcon.append(sa);
             divcon.append(sa1);
         }
+
+
+        async function getData() {
+            try{
+                let response=await fetch("https://jsonplaceholder.typicode.com/posts");
+                let result=await response.json();
+                console.log(result.users);
+                let data=result.users;
+                for(let i=0;i<data.length;i++){
+                    let sample=data[i].firstName;
+                    console.log(sample);
+                }
+            }
+            catch(error){
+                console.log(error);
+
+            }
+
+            let user={
+            userId:1,
+            id:1
+        }
+
+        async function postaData() {
+            let response = await fetch("https://jsonplaceholder.typicode.com/posts",{
+                method:'POST',
+                headers:{
+                    'Content-Type':'application/json',
+                    "Accept":'application/json'
+
+                },
+                body:JSON.stringify(user)
+            });
+            
+        }
+            }
+        
     </script>
 </body>
