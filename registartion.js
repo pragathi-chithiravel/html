@@ -1,4 +1,3 @@
-let user=[{}]
 let samples=document.getElementById("register_form")
 samples.addEventListener("submit",function(event){
     event.preventDefault();
@@ -8,13 +7,11 @@ samples.addEventListener("submit",function(event){
     console.log(newObj);
 
 
-    if(newObj.username=="pragathi"){
+    if(newObj.username && newObj.password){
        alert("Registration completed ✅ You can now login..!")
        window.location.href="loginpage.html"
    }else{
-       alert("Your Registration failed ❌ ")
-     
-    
+    alert("You must Enter your UserName and Password")
    }
 
 })
