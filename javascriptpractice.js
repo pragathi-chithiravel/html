@@ -12,6 +12,8 @@ const sum=users.map(user =>({
 }))
 console.log(sum);
 
+
+numbers=[1,2,3,4,5,6]
 const even=numbers.filter(num =>num%2===0);
 console.log(even);
 const sam=numbers.filter(num => num >=5);
